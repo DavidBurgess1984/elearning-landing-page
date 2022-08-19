@@ -322,7 +322,7 @@ footer {
     .panel-bg {
         display: grid;;
         grid-template-columns: 1fr 1fr 1fr;
-        gap:60px 30px;
+        gap:50px 30px;
         
     }
 
@@ -347,5 +347,9 @@ footer {
 
     .skill-panel a {
         bottom:40px
+    }
+
+    .container-padding.section-content-footer-padding {
+        padding-bottom: 100px;
     }
 }
