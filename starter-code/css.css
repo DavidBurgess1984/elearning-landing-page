@@ -1,0 +1,312 @@
+:root {
+    --purple: #666CA3;
+    --dark-purple: #13183F;
+    --grey: #83869A;
+    --neon-pink:#F74780;
+    --pink: #FFA7C3;
+    --white:#FFFFFF;
+    --pink-gradient:#F02AA6;
+    --orange-gradient:#FF6F48;
+    --purple-gradient:#4851DD;
+    --bright-purple-gradient:#F02AA6;
+    --light-grey-bg:#F2F2F2;
+    --silver-grey-bg:#F0F1FF;    
+    --purple-link-active:#FFA7C3;
+    --dark-purple-link-active:#666CA3;
+    --drop-shadow:#06168D;
+}
+
+*{
+    text-decoration: none;
+    font-family: 'Plus Jakarta Sans',sans-serif;
+    font-weight: 500;
+}
+
+html {
+    font-size: 16px;
+}
+
+body{
+   background-color:var(--light-grey-bg) ;
+    margin: 0 auto;
+    min-height: 100vh;
+    font-family: 'Plus Jakarta Sans',sans-serif;   
+}
+
+.container{
+    width:375px;
+    margin: 0 auto;
+    background-color: var(--white);
+}
+
+.container-padding{
+    padding:16px;
+}
+
+.container-padding.section-content-footer-padding{
+    padding-bottom:20px
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:38px;
+}
+
+a.button-link{
+    padding: 17px 24px;
+    border-radius: 48px;
+    font-weight: 700;
+    display: inline-block;
+    font-size: 1rem;
+    position: relative;
+    z-index: 1;
+}
+
+a.button-link.button-link-dark-purple{
+    color: var(--white);
+    background-color: var(--dark-purple);
+}
+
+.button-link-orange-purple{
+    color: var(--white);
+    background: var(--orange-gradient);
+    background: linear-gradient(180deg, var(--orange-gradient) 0%, var(--bright-purple-gradient) 100%);
+    margin-bottom: 16px ;
+}
+
+
+.button-link-purple-blue{
+    color: var(--white);
+    background: var(--purple-gradient);
+    background: linear-gradient(180deg, var(--purple-gradient) 0%,var(--bright-purple-gradient) 100%);
+}
+
+a.button-link:hover::before,
+a.button-link:active::before,
+a.button-link:focus::before{
+    content: '\A';
+    position: absolute;
+    width: 100%; height:100%;
+    background-color: #FFF;
+    opacity: 0.5;
+    top:0;
+    left:0;
+    border-radius: 48px;
+    display: inline-block;
+}
+
+h1 {
+    font-size: 2.4em;
+    color: var(--dark-purple);
+    font-weight: 700;
+    margin-bottom:30px
+}
+
+p.description{
+    color:var(--grey);
+    line-height: 26px;
+    margin-bottom: 24px;
+    font-size: 1.1rem;
+    word-break:normal;
+}
+
+.course-logo-container{
+    position: relative;
+    height:380px;
+    background: url('./assets/image-hero-mobile.png');
+    background-repeat: no-repeat;
+    background-position: center ;
+}
+
+/* #course-logo{
+    width: 435px;
+    margin-left: -30px;
+} */
+
+.skill-panel{
+    width:100%;
+    min-height: 260px;
+    background-color: var(--white);
+    border-radius: 10px;
+    padding:56px 28px 28px 28px;
+    margin:40px 0;
+    box-sizing: border-box;
+    position: relative;
+    box-shadow: 25 0 50 var(--drop-shadow);
+}
+
+.promo {
+    color: var(--white);
+    background: rgb(255,111,72);
+    background: linear-gradient(180deg, rgba(255,111,72,1) 0%, rgba(240,42,166,1) 100%);
+    border-radius: 10px;
+    width: 100%;
+    min-height: 120px;
+    display: flex;
+    align-items: center;
+    padding:24px;
+    box-sizing: border-box;
+    margin:0
+}
+
+.promo h2{
+    font-size: 1.55rem;
+    line-height: 2rem;
+    font-weight: 700;
+}
+
+.panel-bg{
+    background: var(--white);
+    background: linear-gradient(180deg, var(--white) 0%, var(--silver-grey-bg) 100%);
+}
+
+
+.skill-panel h3{
+    color: var(--dark-purple);
+    font-family: 'Plus Jakarta Sans',sans-serif;  
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 16px;
+}
+
+.skill-panel img.section-logo {
+    position: absolute;
+    top:-25px;
+}
+
+.skill-panel p {
+    color: var(--grey);
+    font-weight:500;
+    line-height: 22px;
+    margin-bottom:30px;
+}
+
+.skill-panel a {
+    color: var(--bright-purple-gradient);
+    font-weight:700;
+}
+
+.skill-panel a:hover, .skill-panel a:focus,.skill-panel a:active{
+    color:var(--purple-link-active);
+}
+
+footer {
+    height:120px;
+    width: 100%;
+    background-color: var(--dark-purple);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding:26px 16px;
+    box-sizing: border-box;
+}
+
+@media (min-width:768px)  { 
+    .container {
+        width:768px;
+        position:relative
+    }
+
+    header {
+        margin-bottom:100px;
+    }
+
+    .max-skill-container{
+        width: 60%;
+        float: left;
+        margin-bottom: 186px;
+    }
+
+    .course-logo-container{
+        background: url('./assets/image-hero-tablet.png');
+        height:640px;
+        width:640px;
+        position: absolute;
+        top:0;
+        right:0;
+        width: 100%;
+        background-position: 380px -90px;
+        background-repeat: no-repeat;
+    }
+
+    .container-padding{
+        padding: 24px 48px;
+        overflow: auto;
+    }
+
+    .panel-bg {
+        display: grid;;
+        grid-template-columns: 1fr 1fr ;
+        gap:20px;
+        
+    }
+
+    .skill-panel{
+         margin:20px 0;
+    }
+
+    .container-padding.section-content-footer-padding{
+        padding-bottom: 86px;
+        overflow: unset;
+    }
+    
+    footer{
+        padding: 36px 40px;
+    }
+
+    .promo{
+        align-items:flex-start;
+        padding-top:56px
+    }
+}
+
+@media (min-width:1440px)  { 
+
+    header {
+        margin-bottom:160px;
+    }
+    .container {
+        width:1440px;
+        position:relative
+    }
+
+    .container-padding{
+        padding: 40px 156px;
+        overflow: auto;
+    }
+
+    footer{
+        padding: 36px 156px;
+    }
+
+    .course-logo-container{
+        background: url('./assets/image-hero-desktop.png');
+        height:784px;
+        width:900px;
+        position: absolute;
+        top:0;
+        right:0;
+        width: 100%;
+        background-position: 720px -150px;
+        background-repeat: no-repeat;
+    }
+
+    .panel-bg {
+        display: grid;;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap:20px;
+        
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+    
+    .max-skill-container{
+        width: 40%;
+
+    }
+}
