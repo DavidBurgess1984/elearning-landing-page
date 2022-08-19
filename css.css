@@ -134,7 +134,8 @@ p.description{
     margin:40px 0;
     box-sizing: border-box;
     position: relative;
-    box-shadow: 25 0 50 var(--drop-shadow);
+    /* box-shadow: 25 0 50 var(--drop-shadow); */
+    box-shadow:1px 0px 20px 4px #cccccc24
 }
 
 .promo {
@@ -246,6 +247,18 @@ footer {
 
     .skill-panel{
          margin:20px 0;
+         min-height: 320px;
+         padding:64px 32px 40px 32px;
+    }
+
+    .skill-panel p {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .skill-panel a{
+        position: absolute;
+        bottom:32px;
     }
 
     .container-padding.section-content-footer-padding{
@@ -259,7 +272,19 @@ footer {
 
     .promo{
         align-items:flex-start;
-        padding-top:56px
+        padding-top:56px;
+        
+    }
+
+    .promo h2{
+        font-size:32px;
+        line-height: 40px;
+    }
+
+    p.description{
+        width:80%;
+        line-height: 28px;
+        font-size: 18px;
     }
 }
 
@@ -302,11 +327,12 @@ footer {
     }
 
     h1 {
-        font-size: 3em;
+        font-size: 56px;
+        font-weight: 800;
     }
     
     .max-skill-container{
-        width: 40%;
+        width: 50%;
 
     }
 }
