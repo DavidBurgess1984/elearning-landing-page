@@ -299,7 +299,7 @@ footer {
     }
 
     .container-padding{
-        padding: 35px 156px;
+        padding: 30px 156px;
         overflow: auto;
     }
 
@@ -333,6 +333,6 @@ footer {
     
     .max-skill-container{
         width: 50%;
-
+        margin-bottom:226px
     }
 }
