@@ -299,7 +299,7 @@ footer {
     }
 
     .container-padding{
-        padding: 30px 156px;
+        padding: 30px 150px;
         overflow: auto;
     }
 
@@ -350,6 +350,6 @@ footer {
     }
 
     .container-padding.section-content-footer-padding {
-        padding-bottom: 110px;
+        padding-bottom: 116px;
     }
 }
