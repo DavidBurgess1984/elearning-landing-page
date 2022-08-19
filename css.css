@@ -334,7 +334,7 @@ footer {
     
     .max-skill-container{
         width: 50%;
-        margin-bottom:190px
+        margin-bottom:175px
     }
 
     p.description{
@@ -343,5 +343,9 @@ footer {
 
     a.button-link{
         padding: 20px 33px;
+    }
+
+    .skill-panel a {
+        bottom:40px
     }
 }
